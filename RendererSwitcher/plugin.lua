@@ -5,7 +5,7 @@ validRenderers = {
 	["D3D11"] = true
 }
 
-function PluginVersion()
+function PluginExecute()
 	local rendererOverride = GetEnvironment("FORCE_RENDERER")
 	if rendererOverride ~= "" and validRenderers[rendererOverride] == true then
 		Log("Overriding renderer to " .. rendererOverride .. "!", "info")
